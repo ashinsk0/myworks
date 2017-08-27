@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <signal.h>\
+
+void abc();
+
+void main()
+{
+  signal(SIGCLD, abc);
+  int id = fork();
+  wait();
+  if(id==0)
+{
+    printf("\nChild Id is %d\n", getpid());
+    printf("\nParent Id is %d\n", getppid());
+}
+}
+
+void abc()
+{
+
+ printf("\nHai\n");
+
+}

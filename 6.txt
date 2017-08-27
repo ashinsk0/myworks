@@ -1,0 +1,11 @@
+#include  <stdio.h>
+#include  <signal.h>
+
+void  main()
+{
+
+     signal(SIGINT,SIG_DFL);
+
+for (;;);
+
+}

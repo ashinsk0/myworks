@@ -1,0 +1,19 @@
+#include  <stdio.h>
+#include  <signal.h>
+
+
+void abc();
+
+void  main()
+{
+
+     signal(SIGINT,abc);
+
+for (;;);
+
+}
+   void abc()
+{
+
+               printf("\nHai\n");
+}

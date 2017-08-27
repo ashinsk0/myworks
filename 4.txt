@@ -1,0 +1,12 @@
+#include  <stdio.h>
+#include  <signal.h>
+
+
+void  main()
+{
+
+     signal(SIGQUIT,SIG_DFL);
+
+for (;;);
+
+}
